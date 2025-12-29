@@ -1,0 +1,8 @@
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+ 
+    RequestCommand:InvokeServer(";music 76578817848504")
+	RequestCommand:InvokeServer(";volume 50")
+	RequestCommand:InvokeServer(";pitch 1.2")
+ 
+end)
